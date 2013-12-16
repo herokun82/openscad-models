@@ -22,8 +22,8 @@ module lamp(width, length, height, thickness, bottom_space, hole_count, hole_thi
 	}
 
 	module bottom_hole() {
-		translate([width/4, length/2-thickness, -thickness/2])
-			cube([width/2, length/2, 2*thickness]);
+		translate([width/6, thickness, -thickness/2])
+			cube([width*2/3, length/2, 2*thickness]);
 	}
 
 	difference() {
@@ -39,4 +39,4 @@ module lamp(width, length, height, thickness, bottom_space, hole_count, hole_thi
 }
 
 color("orange")
-	lamp(200, 80, 60, 6, 25, 8, 1.5);
+	lamp(140, 140, 70, 1, 25, 12, 1);
