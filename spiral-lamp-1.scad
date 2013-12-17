@@ -17,4 +17,4 @@ module lamp(width, height, thickness, gap_size) {
 	}
 }
 
-lamp(200, 200, 3, 50);
+lamp(200, 200, 3, 80);
